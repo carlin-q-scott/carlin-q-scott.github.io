@@ -1,7 +1,6 @@
 ---
 tags: [ dotnet core, EntityFramework, EF, EF Core, SQL, postgres, LINQ ]
 ---
-
 # Executing raw SQL with EntityFramework
 
 Throughout the interwebs, you will find a solution for executing raw SQL using EntityFramework:  

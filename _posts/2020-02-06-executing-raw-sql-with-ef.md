@@ -1,5 +1,5 @@
 ---
-tags: "dotnet core" EntityFramework EF "EF Core" SQL postgres LINQ
+tags: 'dotnet core' EntityFramework EF 'EF Core' SQL postgres LINQ
 ---
 
 # Executing raw SQL with EntityFramework

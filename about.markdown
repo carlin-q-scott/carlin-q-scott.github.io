@@ -4,6 +4,14 @@ title: About
 permalink: /about/
 ---
 
+## About Me
+
+Hello,
+
+I'm a Senior Fullstack Software Engineer, including DevOps. I graduated from Oregon State University in 2008 with a BS in Computer Engineering and I've worked in the industry since 2007 (internships).
+
+## About Site
+
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:

@@ -29,8 +29,6 @@ github_username:  carlin-q-scott
 author:
   name: Carlin Scott
   email: carlin@carlinscott.com
-  picture: https://secure.gravatar.com/avatar/d4a11103f5b2b3a461f577bc08c546c0
-  twitter: carlin-q-scott
 social:
   name: Carlin Scott
   links:
@@ -39,6 +37,7 @@ social:
 google_analytics: G-SE1GDYXG06
 minima:
   skin: solarized
+  avatar: https://secure.gravatar.com/avatar/d4a11103f5b2b3a461f577bc08c546c0
   social_links:
     gitlab:
       - username: carlin.q.scott

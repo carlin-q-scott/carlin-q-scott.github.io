@@ -24,34 +24,33 @@ description: >- # this means to ignore newlines until "baseurl:"
   Professional blog of Carlin Scott, a Senior Software Engineer working from the Silicon Forest.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.carlinscott.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: carlin-q-scott
+twitter_username: carlinqscott
 github_username:  carlin-q-scott
 author:
   name: Carlin Scott
   email: carlin@carlinscott.com
+avatar: https://secure.gravatar.com/avatar/d4a11103f5b2b3a461f577bc08c546c0
 social:
   name: Carlin Scott
   links:
     - https://www.linkedin.com/in/carlinqscott
     - https://stackoverflow.com/users/576153/carlin-scott
 google_analytics: G-SE1GDYXG06
-minima:
-  skin: solarized
-  avatar: https://secure.gravatar.com/avatar/d4a11103f5b2b3a461f577bc08c546c0
-  social_links:
-    gitlab:
-      - username: carlin.q.scott
-        instance: gitlab.com
-      - username: cscott
-        instance: gitlab.teamdms.com
-    twitter: carlin-q-scott
-    stackoverflow: carlin-scott
-    linkedin: carlinqscott
-    mastodon:
-      - username: carlin
-        instance: freeradical.zone
-  disqus:
-    shortname: carlinscott.disqus.com
+skin: solarized
+social_links:
+  gitlab:
+    - username: carlin.q.scott
+      instance: gitlab.com
+    - username: cscott
+      instance: gitlab.teamdms.com
+  twitter: carlin-q-scott
+  stackoverflow: carlin-scott
+  linkedin: carlinqscott
+  mastodon:
+    - username: carlin
+      instance: freeradical.zone
+disqus:
+  shortname: carlinscott.disqus.com
 show_excerpts: true
 
 # Build settings

@@ -1,4 +1,5 @@
 ---
+description: How to execute raw SQL while using EntityFramework, by using Dapper instead.
 tags: [ dotnet core, EntityFramework, EF, EF Core, SQL, postgres, LINQ ]
 ---
 # Executing raw SQL with EntityFramework

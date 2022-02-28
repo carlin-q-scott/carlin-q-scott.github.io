@@ -44,6 +44,7 @@ theme: minima #https://github.com/jekyll/minima/tree/2.5-stable
 plugins:
   - jekyll-feed
   - jekyll-titles-from-headings
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

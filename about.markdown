@@ -10,6 +10,13 @@ Hello,
 
 I'm a Senior Fullstack Software Engineer, including DevOps. I graduated from Oregon State University in 2008 with a BS in Computer Engineering and I've worked in the industry since 2007 (internships).
 
+### GitHub Repos
+{% for repository in site.github.public_repositories %}
+  <a href='{{ repository.html_url }}'>
+    {{ repository.name }}
+  </a>
+{% endfor %}
+
 ## About Site
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

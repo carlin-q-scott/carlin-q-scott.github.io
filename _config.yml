@@ -27,6 +27,8 @@ url: "https://www.carlinscott.com" # the base hostname & protocol for your site,
 twitter_username: carlin-q-scott
 github_username:  carlin-q-scott
 author:
+  name: Carlin Scott
+  email: carlin@carlinscott.com
   picture: https://secure.gravatar.com/avatar/d4a11103f5b2b3a461f577bc08c546c0
   twitter: carlin-q-scott
 social:
@@ -35,6 +37,23 @@ social:
     - https://www.linkedin.com/in/carlinqscott
     - https://stackoverflow.com/users/576153/carlin-scott
 google_analytics: G-SE1GDYXG06
+minima:
+  skin: solarized
+  social_links:
+    gitlab:
+      - username: carlin.q.scott
+        instance: gitlab.com
+      - username: cscott
+        instance: gitlab.teamdms.com
+    twitter: carlin-q-scott
+    stackoverflow: carlin-scott
+    linkedin: carlinqscott
+    mastodon:
+      - username: carlin
+        instance: freeradical.zone
+  disqus:
+    shortname: carlinscott.disqus.com
+show_excerpts: true
 
 # Build settings
 theme: minima

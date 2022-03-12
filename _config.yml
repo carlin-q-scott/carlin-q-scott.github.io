@@ -20,6 +20,7 @@
 
 title: Carlin Scott
 email: carlin@carlinscott.com
+tagline: A software development blog
 description: >- # this means to ignore newlines until "baseurl:"
   Professional blog of Carlin Scott, a Senior Software Engineer working from the Silicon Forest.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -30,6 +31,8 @@ google_analytics: G-SE1GDYXG06
 gitlab_username: carlin.q.scott
 stackoverflow_username: carlin-scott
 twitter_username: carlinqscott
+twitter:
+  username: carlinqscott
 github_username:  carlin-q-scott
 linkedin_username: carlinqscott
 mastodon:

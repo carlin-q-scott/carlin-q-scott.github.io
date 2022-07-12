@@ -6,9 +6,11 @@ tags: [ dotnet, asp.net, dotnet core, integration testing, testing, NUnit, xUnit
 
 ## NUnit
 
-NUnit doesn't inject dependencies into test fixtures, but that's not a big deal because you can construct the DI container of your choice in an AssemblyFixture:
+NUnit doesn't inject dependencies into test fixtures, but that's not a big deal because you can construct the DI container of your choice in an AssemblyFixture.
 
-#### AssemblyFixture.cs
+### Implementation
+
+##### AssemblyFixture.cs
 ```csharp
 [AssemblyFixture]
 public static class TestFixture
@@ -16,15 +18,16 @@ public static class TestFixture
     IHost host;
 
     [OneTimeSetup]
-    public void OneTimeSetup()
-    {
+    public static void OneTimeSetup() =>
         host = Host.CreateDefaultBuilder()
             .ConfigureServices(Sut.StartUp.ConfigureServices)
             .Build();
-    }
+
+    [OneTimeTearDown]
+    public static void OneTimeTearDown() => host.Dispose();
 }
 ```
-#### BaseTestFixture.cs
+##### BaseTestFixture.cs
 ```csharp
 [TestFixture]
 public abstract class BaseTestFixture
@@ -48,7 +51,7 @@ public abstract class BaseTestFixture
 }
 ```
 
-#### ExampleTests.cs
+##### ExampleTests.cs
 ```csharp
 [TestFixture]
 public class ExampleTests : BaseTestFixture
@@ -72,27 +75,39 @@ public class ExampleTests : BaseTestFixture
 
 xUnit has an extension package that enables DI for your test classes, but it honestly doesn't save that much code compared to the NUnit implementation above. It however has the advantage in that it provides a structure that mimics the standard ASP.NET Startup class.
 
-#### StartUp.cs
+### Prerequisites
+
+NuGet Packages:
+* Xunit.DependencyInjection
+* Xunit.DependencyInjection.Logging
+
+### Implementation
+
+##### StartUp.cs
+
 ```csharp
-    public class Startup
+using Xunit.DependencyInjection;
+using Xunit.DependencyInjection.Logging;
+
+public class Startup
+{
+    public IHostBuilder CreateHostBuilder() => Sut.Program.CreateHostBuilder();
+
+    /// <summary>
+    /// Configures services required by the system under test.
+    /// </summary>
+    /// <param name="services"></param>
+    public void ConfigureServices(IServiceCollection services)
     {
-        public IHostBuilder CreateHostBuilder() => Sut.Program.CreateHostBuilder();
-
-        /// <summary>
-        /// Configures services required by the system under test.
-        /// </summary>
-        /// <param name="services"></param>
-        public void ConfigureServices(IServiceCollection services)
-        {
-            // register mocked dependencies here to override the real ones
-        }
-
-        public void Configure(ILoggerFactory loggerFactory, ITestOutputHelperAccessor accessor) =>
-            loggerFactory.AddProvider(new XunitTestOutputLoggerProvider(accessor));
+        // register mocked dependencies here to override the real ones
     }
+
+    public void Configure(ILoggerFactory loggerFactory, ITestOutputHelperAccessor accessor) =>
+        loggerFactory.AddProvider(new XunitTestOutputLoggerProvider(accessor));
+}
 ```
 
-#### ExampleTests.cs
+##### ExampleTests.cs
 ```csharp
 public class ExampleTests
 {

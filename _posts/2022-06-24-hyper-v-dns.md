@@ -12,8 +12,8 @@ Reference Guest/Host by DNS name.
     1. Open the Hyper-V Manager
     1. Under Actions on the right, select "Virtual Switch Manager"
     1. You should only see one or two Switches:
-    1. Default Switch - an internal switch which allows internet access but uses a private subnet for the VMs
-    1. WSL (optional) - An internal switch which doesn't allow internew access. Use by the Windows Subsystem for Linux 2 (WSL2)
+       - Default Switch - an internal switch which allows internet access but uses a private subnet for the VMs
+       - WSL (optional) - An internal switch which doesn't allow internew access. Use by the Windows Subsystem for Linux 2 (WSL2)
     1. Select "New virutal network switch"
     1. Choose External for the type
     1. Click "Create Virtual Switch"

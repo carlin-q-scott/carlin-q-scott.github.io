@@ -1,0 +1,25 @@
+---
+tags: [Productivity, Git, WSL, Windows, Bash]
+---
+# Launching Windows Programs from WSL
+
+Windows Subsystem for Linux 2 (WSL2) supports launching any Windows application exe and will automatically convert . to a Windows path.
+
+So, for instance, I like using GitExtensions to manage my git repository, and in a Windows terminal I can open the current repository in GitExtensions by simply typing `gitex` and pressing enter. To get this functionality in the WSL I had to create an alias:
+
+```bash
+alias gitex="'/mnt/c/Program Files (x86)/GitExtensions/GitExtensions.exe' . &"
+```
+
+> Note: I had to add the `.` on the end, because selecting the current path would normally be handled by gitex.cmd. It also would run the program in the background, allowing me to continue using my terminal session; hence the `&` at the end.
+
+## Make it Permanent
+
+An aliase is only for the current shell session. To make it "permanent", we need to append it to **~/.bashrc**.
+
+I did that by simply openging .bashrc with vim and adding it to the end:
+1. `vi ~/.bashrc`
+2. Shift+G
+3. Shift+O
+4. Right-Click
+5. `:x`

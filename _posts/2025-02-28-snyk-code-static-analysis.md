@@ -1,6 +1,6 @@
 ---
 title: Snyk Code Static Analysis and Custom SQL Injection Mitigation in C#
-date: 2023-04-10
+date: 2025-02-28
 tags: [Snyk, Static Analysis, SQL Injection, C#, Regex]
 ---
 

@@ -224,8 +224,6 @@ GEM
     minitest (5.25.4)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    nokogiri (1.19.1-x64-mingw-ucrt)
-      racc (~> 1.4)
     nokogiri (1.19.1-x86_64-linux-gnu)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -257,16 +255,12 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2026.1)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     uri (1.1.1)
-    wdm (0.1.1)
     webrick (1.9.1)
     zeitwerk (2.7.2)
 
 PLATFORMS
-  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
@@ -275,9 +269,6 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-titles-from-headings
   minima (~> 2.5)
-  tzinfo (~> 2.0)
-  tzinfo-data
-  wdm (~> 0.1.1)
 
 BUNDLED WITH
    2.5.11

@@ -30,9 +30,9 @@ I've been watching this trend for a while and telling myself we'd wait until the
 
 The last straw was evaluating a couple of AI agents for our team that could assist with code reviews and automate some of the more tedious parts of our workflow. Both of them listed GitHub integration prominently. One supported GitLab as a beta feature. Neither mentioned Bitbucket.
 
-When I reached out to one of the vendors to ask about Bitbucket support, they said it was "on the roadmap." And for the smaller vendors, maybe that's even true. But for the big ones? I don't believe it for a second.
+When I reached out to one of the vendors to ask about Bitbucket support, they said it was "on the roadmap." And for the smaller vendors, maybe that's even true. But for the big ones? Probably never.
 
-GitHub Copilot is a Microsoft product built on top of a Microsoft-owned platform. There is zero business incentive for them to invest engineering effort making it work seamlessly with a competitor. Claude, from Anthropic, has made no public commitments to deep Bitbucket Cloud integration either, and I don't expect them to. These aren't small feature gaps — they're fundamental integrations that require real, ongoing investment to build and maintain. Why would they bother when GitHub is where the majority of the market already is?
+GitHub Copilot is a Microsoft product built on top of a Microsoft-owned platform. There's not much business incentive for them to invest engineering effort making it work seamlessly with a competitor. Claude, from Anthropic, has made no public commitments to deep Bitbucket Cloud integration either, and I don't expect them to. These aren't small feature gaps — they're fundamental integrations that require real, ongoing investment to build and maintain. Why would they bother when GitHub is where the majority of the market already is?
 
 ## The Migration Decision
 
